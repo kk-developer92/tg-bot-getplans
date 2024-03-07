@@ -3,20 +3,37 @@
     flex-direction: column;
     border: 1px solid var(--tg-theme-button-color);
     padding: 15px;
-    width: 170px;
+    background-size: cover;
+    height: 290px;
+    border-radius: 21px;
+    padding: 21px 17px;
+    color: white;
+    background-size: cover;justify-content: flex-end;
+    position: relative;
+
+    .title {
+        font-size: 16px;
+        font-weight: 500;
+    }
 }
 
 
-.img {
+/* .img {
     width: 100%;
     background: lightgray;
     height: 100px;
     margin: 0 auto;
     background: var(--tg-theme-button-color);
-}
+} */
 
-.description {
+.area {
     font-size: 0.8em;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 5px 10px;
+    background-color: rgba(0,0,0,0.30);
+    border-radius: 50px;
 }
 
 .add-btn {

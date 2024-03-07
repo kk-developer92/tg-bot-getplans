@@ -9,16 +9,17 @@ const ProductItem = ({product, className, onAdd}) => {
     }
 
     return (
-        <div className={'product ' + className}>
-            <div className={'img'}/>
+        <div className={'product ' + className} style={{
+            background: `linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.80)), url(${product.image}) center / cover`
+        }}>
             <div className={'title'}>{product.title}</div>
-            <div className={'description'}>{product.description}</div>
+            <div className={'area'}>{product.area}</div>
             <div className={'price'}>
                 <span>Стоимость: <b>{product.price}</b></span>
             </div>
-            <Button className={'add-btn'} onClick={onAddHandler}>
+            {/* <Button className={'add-btn'} onClick={onAddHandler}>
                 Добавить в корзину
-            </Button>
+            </Button> */}
         </div>
     );
 };
